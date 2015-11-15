@@ -17,8 +17,9 @@ app.secret_key = str(uuid.uuid4())
 @app.route('/')
 def SendMail():
 	message = mail.EmailMessage()
-	message.sender = '___@xxx'
-	message.to = '___@xxx'
+	message.sender = 'Administrator <myemail@mysite>'
+	message.to = '<useremail@useremail>'
+	message.subject = 'Hello !'
 	message.body = 'Hello ! I hope you receive my email :)'
 	message.send()
 	
