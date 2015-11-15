@@ -1,4 +1,3 @@
-
 '''
 [Google Mail Api]
 https://cloud.google.com/appengine/docs/python/mail/sendingmail
@@ -7,7 +6,6 @@ https://cloud.google.com/appengine/docs/python/mail/sendingmail
    :To show that you don't need to use google user authentication to send email.
  - Local google app engine browser won't work, however, once you deploy, it will work fine :)
 '''
-
 
 from flask import Flask
 from google.appengine.api import mail
